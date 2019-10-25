@@ -16,7 +16,7 @@
   scan 'tbl'(类似于select * from tbl)
   truncate 'tbl'(清空tbl表)
 
-5 java里，所有的api，都是对上面这些基础命令的封装，例如，java里插入一条数据，就是构建一个put对象，
+5 java里，所有的api，都是对上面这些基础命令的封装，例如，java里插入一条数据，就是构建一个put对象
 设置 相应的列名，然后执行插入
 同样，要获取一行，那么就是构建一个 get对象，设置他的rowkey值；
      要查询，那么就是构建一个scan兑现，设置前缀，以及startrow，stoprow之类的
